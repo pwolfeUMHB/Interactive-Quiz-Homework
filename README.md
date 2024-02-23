@@ -42,7 +42,9 @@ Submit the following files:
     <script src="script.js"></script>
 </body>
 </html>
-```html
+```
+
+
 ### CSS (`style.css`)
 ```css
 body {
@@ -62,7 +64,8 @@ label {
 input[type=button] {
     margin-top: 20px;
 }
-```css
+```
+
 ### JavaScript (`script.js`)
 
 ```javascript
@@ -74,4 +77,5 @@ function calculateScore() {
     }
     document.getElementById('result').textContent = "Your score is: " + score;
 }
-```javascript
+```
+
