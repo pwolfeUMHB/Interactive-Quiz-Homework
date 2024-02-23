@@ -20,7 +20,58 @@ Submit the following files:
 - `style.css`: Styles for the quiz.
 - `script.js`: Logic to run the quiz and display results.
 
-## Bonus
-Enhance your quiz with additional features like question randomization, a countdown timer, or detailed feedback for each question.
+## Basic Code Outline
 
-Good luck!
+### HTML (`quiz.html`)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    ...
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quizContainer">
+        <form id="quizForm">
+            ...
+            <input type="button" value="Submit" onclick="calculateScore()">
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+### CSS (`style.css`)
+```css
+body {
+    font-family: Arial, sans-serif;
+}
+
+#quizContainer {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type=button] {
+    margin-top: 20px;
+}
+
+### JavaScript (`script.js`)
+
+```javascript
+function calculateScore() {
+    let score = 0;
+    // Example scoring logic for one question
+    if (document.getElementById('js3').checked) {
+        score++;
+    }
+    document.getElementById('result').textContent = "Your score is: " + score;
+}
+```
