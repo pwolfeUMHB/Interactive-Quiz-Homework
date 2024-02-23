@@ -20,9 +20,9 @@ Submit the following files:
 - `style.css`: Styles for the quiz.
 - `script.js`: Logic to run the quiz and display results.
 
-## Basic Code Outline
+## Basic Code Outline for HTML, CSS & JS
 
-### HTML, CSS, & JS
+### HTML (`quiz.html`)
 ```html
 <!DOCTYPE html>
 <html lang="en">
