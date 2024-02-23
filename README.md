@@ -22,7 +22,7 @@ Submit the following files:
 
 ## Basic Code Outline
 
-### HTML (`quiz.html`)
+### HTML, CSS, & JS
 ```html
 <!DOCTYPE html>
 <html lang="en">
