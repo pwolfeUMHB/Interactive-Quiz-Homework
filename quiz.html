@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body style="background-color: #BC986A;">
+
+    <marquee behavior="alternate" direction="right">!!!  POP QUIZ  !!!</marquee>
+    
+    <h1 id="header">Welcome To Quiz 1</h1>
+    <div id="quizContainer">
+        <form id="quizForm">
+    
+            
+            <label for="js1"><b>Question 1: What is 2+2: </b> </label><br>
+            <input type="radio" id="js1"name="js1"value="4">
+            <label for="js1"><b>4</b></label><br>
+            <input type="radio" id="js2"name="js1"value="5">
+            <label for="js2"><b>5</b></label><br>
+             
+
+
+             <label for="js3"><b>Is Professor.Wolfe #1 professor?: </b></label><br>
+            <input type="radio" id="js3"name="js2"value="yes">
+            <label for="js3"><b>True</b></label><br>
+            <input type="radio" id="js4"name="js2"value="no">
+            <label for="js4"><b>False</b></label><br>
+             <input type="button" value="Sumbit" onclick="calculateScore()">
+        </form>
+        <br><br>
+        <div id="result"></div>
+    </div>
+
+    <marquee behavior="scroll" direction="right">
+        <img src="style/test.gif" alt="Teacher">
+    </marquee>
+    <script src="script.js"></script>
+
+</body>
+</html>
