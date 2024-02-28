@@ -9,12 +9,15 @@ body {
     margin: auto;
     padding: 20px;
     box-shadow: 4px 4px 8px rgb(0, 0, 0, 1);
+    border-radius: 20px;
 }
 
 label {
     margin-left: 10px;
 }
-
 input[type=button] {
     margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0, 1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }

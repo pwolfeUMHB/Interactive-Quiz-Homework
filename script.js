@@ -7,7 +7,6 @@ function calculateScore() {
     // Answer is not determined yet so it will be blank
     if (sliderValue >= 10 && sliderValue<=20) {
         score++;
-    }
 }
 
     //Question 2: Java questions
