@@ -2,18 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <div id="quizContainer">
+        <h1>Interactive W&Q</h1>
         <form id="quizForm">
-            <p>Please Answer Each Question</p>
-            <input type="radio" id="Question1" name="question" value="">
-            <label for
+            <fieldset>
+            <legend>Question 1: What is the </legend>
+            <label for="slider">Select a value:</label>
+            <input type="range" id="slider" name="q1" min="0" max="30" step="10" value="0">
+            <output for="slider" id="sliderValue">0</output>
+        </label>
+            <fieldset>
+
+
+            <fieldset>
+                <legend>Question 2: What is the </legend>
+            <label>
+                <input type="checkbox" name="q2" value="true"> false
+            </label>
+            <label>
+                <input type="checkbox" name="q2" value="true"> True
+                </label>
+            </fieldset>
+
+            <input type="button" value="Submit" onclick="calculateScore()">
         </form>
         <div id="result"></div>
     </div>
     <script src="script.js"></script>
-    <input type="button" value="Submit" onclick="calculateScore()">
 </body>
 </html>
