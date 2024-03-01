@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Don's Interactive Quiz!!</title>
+</head>
+<body>
+    <div id="quizContainer">
+        <form>
+            
+            <section>
+                <h3>What is the central goal of the protagonist, Naruto Uzumaki, in the anime "Naruto"?</h3>
+                <input class="question1" type="radio" name="question1" >
+                <label for="answer">To become the strongest ninja in his village</label><br>
+
+                <input class="question1" type="radio" name="question1">
+                <label for="answer">To find and defeat the mythical Nine-Tails Fox</label><br>
+
+                <input class="question1" type="radio" name="question1">
+                <label for="answer">To uncover the truth about his parents' disappearance</label><br>
+
+                <input class="question1" type="radio" name="question1" id="correctAnswer1">
+                <label for="answer">To become the Hokage and gain recognition from his peers</label><br>
+            </section><br><br>
+
+            <section>
+                <h3>Don has what brand of laptop?</h3>
+                <input class="question2" type="radio" name="question2">
+                <label for="answer">Acer</label><br>
+
+                <input class="question2" type="radio" name="question2" id="correctAnswer2">
+                <label for="answer">Samsung</label><br>
+
+                <input class="question2" type="radio" name="question2">
+                <label for="answer">HP</label><br>
+
+                <input class="question2" type="radio" name="question2">
+                <label for="answer">Lenovo</label><br>
+            </section><br><br>
+
+            <section>
+                <h3>What class is this Homework for?</h3>
+                <input class="question3" type="radio" name="question3">
+                <label for="answer">Discrete Mathmatics</label><br>
+
+                <input class="question3" type="radio" name="question3">
+                <label for="answer">Algorithms & Data Structures</label><br>
+
+                <input class="question3" type="radio" name="question3" id="correctAnswer3">
+                <label for="answer">Web Devlopment</label><br>
+
+                <input class="question3" type="radio" name="question3">
+                <label for="answer">Operating Systems</label><br>
+            </section><br><br>
+
+            <section>
+                <h3>Three anime rose in popularity between the late 90s and early 2000s, these gaining the collective title of "Big 3". Which three anime are apart of the big 3?</h3>
+                <input class="question4" type="checkbox" name="question4" id="whichApplyinCorrectAnswer1">
+                <label for="answer">Dragon Ball Z</label><br>
+
+                <input class="question4" type="checkbox" name="question4" id="whichApplyCorrectAnswer1">
+                <label for="answer">BLEACH</label><br>
+
+                <input class="question4" type="checkbox" name="question4" id="whichApplyCorrectAnswer2">
+                <label for="answer">Naruto</label><br>
+
+                <input class="question4" type="checkbox" name="question4" id="whichApplyinCorrectAnswer2">
+                <label for="answer">Hunter X Hunter</label><br>
+
+                <input class="question4" type="checkbox" name="question4" id="whichApplyinCorrectAnswer3">
+                <label for="answer">Jujutsu Kaisen</label><br>
+
+                <input class="question4" type="checkbox" name="question4" id="whichApplyCorrectAnswer3">
+                <label for="answer">One Piece</label><br>
+            </section><br><br>
+
+            <section>
+                <h3>Don skates.</h3>
+                <input class="question5" type="radio" name="question5" id="correctAnswer4">
+                <label for="answer">True</label><br>
+
+                <input class="question5" type="radio" name="question5">
+                <label for="answer">False</label><br>
+            </section><br><br>
+
+            <input type="button" value="submit" onclick="calculateScore()">
+        </form>
+
+        <div id="Grade"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
