@@ -2,17 +2,24 @@ function calculateScore() {
     let score = 0;
     
     // Question 1: What is??
-    const sliderValue = parseInt(document.getElementById('slider').value);
+    const selectedOption = document.querySelector('input[name="q1"]:checked');
     
     // Answer is not determined yet so it will be blank
-    if (sliderValue >= 10 && sliderValue<=20) {
-        score++;
-}
+    if (selectedOption) {
+        const selectedValue = selectedOption.value;
+        
 
+        if (selectedValue === 'const') {
+            score++;
+        }
+    }
     //Question 2: Java questions
     const q20ptions = document.querySelectorAll('input[name="q2"]:checked');
-    if  (q20ptions.length === 1 && q20ptions[0].value === "false") {
+    if  (q20ptions.length === 1 && q20ptions[0].value === "true") {
         score++;
     }
-    document.getElementById(result).textContent = "Your score is: " + score + "";
+
+    const finalScore = (score / 2) *  100;
+    
+    document.getElementById('result').textContent = "Your score is: " + finalScore + "%";
 }
